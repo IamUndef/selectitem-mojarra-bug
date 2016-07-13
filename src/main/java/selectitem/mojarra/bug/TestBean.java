@@ -20,7 +20,7 @@ public class TestBean implements Serializable {
     private final List<String> repeatValues = new ArrayList<>(Arrays.asList("hello", "hello"));
     private final List<String> regularValues = new ArrayList<>(Arrays.asList("hello", "hello"));
 
-    public void changeSelectItemValue(String clientId, final String render, final String value) {
+    public void changeSelectItemValue(final String clientId, final String render, final String value) {
         FacesContext.getCurrentInstance().getViewRoot().visitTree(
                 new FullVisitContext(FacesContext.getCurrentInstance()),
                 (context, target) -> {
