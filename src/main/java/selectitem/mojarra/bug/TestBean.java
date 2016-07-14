@@ -16,7 +16,7 @@ import javax.faces.context.FacesContext;
 @ManagedBean
 public class TestBean implements Serializable {
 
-    private final List<String> list = Arrays.asList("one", "two");
+    private final List<String> list = Arrays.asList("1", "2");
     private final List<String> repeatValues = new ArrayList<>(Arrays.asList("hello", "hello"));
     private final List<String> regularValues = new ArrayList<>(Arrays.asList("hello", "hello"));
 
